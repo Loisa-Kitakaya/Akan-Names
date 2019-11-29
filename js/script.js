@@ -1,5 +1,6 @@
 //the function userInfo()
 function userInfo() {
+  //arrays (maleNames, and femaleNames) with the akan names
   var maleNames = [
     "Kwasi",
     "Kwadwo",
@@ -11,11 +12,13 @@ function userInfo() {
   ];
   var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
+  //variables to get and store user input
   var cc = parseInt(document.getElementById("cc").value);
   var yy = parseInt(document.getElementById("yy").value);
   var mm = parseInt(document.getElementById("mm").value);
   var dd = parseInt(document.getElementById("dd").value);
 
+  //if statements to check if the user has given required values
   if (mm == "" || mm < 1 || mm > 12) {
     alert("Please enter a valid month ");
     return false;
@@ -26,12 +29,15 @@ function userInfo() {
     return false;
   }
 
+  //formula to calculate the day of the week the user was born
   var day =
     parseInt(cc / 4 - 2 * cc - 1 + (5 * yy) / 4 + (26 * (mm + 1)) / 10 + dd) %
     7;
 
+  //variable to store the value of the selected radio button
   var gender = document.querySelector('input[name="gender"]:checked').value;
 
+  //if statements to give the user his/her akan name
   if (gender == 1) {
     if (day === 0) {
       alert("You were born on a Sunday");
