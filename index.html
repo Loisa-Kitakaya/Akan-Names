@@ -23,26 +23,29 @@
           These "day names" have further meanings concerning the soul and
           character of the person. Middle names have considerably more variety
           and can refer to their birth order, twin status, or an ancestor's
-          middle name.
+          middle name. Fill the form to find out what your Akan name is.
         </p>
 
         <div id="fo-rm">
           <form action="/js/script.js" method="post">
-            <p id="form-fields">
+            <p class="form-fields">
               <label for="cc">Century:</label>
               <input type="number" id="cc" required />
 
               <label for="yy">Year:</label>
               <input type="number" id="yy" required />
 
-              <label for="cc">Month:</label>
+              <label for="mm">Month:</label>
               <input type="number" id="mm" min="1" max="12" required />
 
-              <label for="cc">Day:</label>
+              <label for="dd">Day:</label>
               <input type="number" id="dd" min="1" max="31" required />
 
               <input type="radio" name="gender" value="1" required />Female
               <input type="radio" name="gender" value="2" required />Male
+            </p>
+            <p class="form-fields">
+              <button name="submit" onclick="userInfo();">Submit</button>
             </p>
           </form>
         </div>
