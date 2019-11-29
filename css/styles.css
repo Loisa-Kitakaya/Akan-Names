@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+.te-xt-color {
+  color: rgb(207, 207, 207);
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
