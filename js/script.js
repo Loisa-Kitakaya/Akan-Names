@@ -10,4 +10,9 @@ function userInfo() {
     "Kwame"
   ];
   var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+  var cc = parseInt(document.getElementById("cc").value);
+  var yy = parseInt(document.getElementById("yy").value);
+  var mm = parseInt(document.getElementById("mm").value);
+  var dd = parseInt(document.getElementById("dd").value);
 }
