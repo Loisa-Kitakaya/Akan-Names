@@ -31,4 +31,56 @@ function userInfo() {
     7;
 
   var gender = document.querySelector('input[name="gender"]:checked').value;
+
+  if (gender == 1) {
+    if (day === 0) {
+      alert("You were born on a Sunday");
+      alert("Your name is: " + femaleNames[0]);
+    } else if (day === 1) {
+      alert("You were born on a Monday");
+      alert("Your name is: " + femaleNames[1]);
+    } else if (day === 2) {
+      alert("You were born on a Tuesday");
+      alert("Your name is: " + femaleNames[2]);
+    } else if (day === 3) {
+      alert("You were born on a Wednesday");
+      alert("Your name is: " + femaleNames[3]);
+    } else if (day === 4) {
+      alert("You were born on a Thursday");
+      alert("Your name is: " + femaleNames[4]);
+    } else if (day === 5) {
+      alert("You were born on a Friday");
+      alert("Your name is: " + femaleNames[5]);
+    } else if (day === 6) {
+      alert("You were born on a Saturday");
+      alert("Your name is: " + femaleNames[6]);
+    } else {
+      alert("Please try again. Input valid data");
+    }
+  } else {
+    if (day === 0) {
+      alert("You were born on a Sunday");
+      alert("Your name is: " + maleNames[0]);
+    } else if (day === 1) {
+      alert("You were born on a Monday");
+      alert("Your name is: " + maleNames[1]);
+    } else if (day === 2) {
+      alert("You were born on a Tuesday");
+      alert("Your name is: " + maleNames[2]);
+    } else if (day === 3) {
+      alert("You were born on a Wednesday");
+      alert("Your name is: " + maleNames[3]);
+    } else if (day === 4) {
+      alert("You were born on a Thursday");
+      alert("Your name is: " + maleNames[4]);
+    } else if (day === 5) {
+      alert("You were born on a Friday");
+      alert("Your name is: " + maleNames[5]);
+    } else if (day === 6) {
+      alert("You were born on a Saturday");
+      alert("Your name is: " + maleNames[6]);
+    } else {
+      alert("Please try again. Input valid data");
+    }
+  }
 }
