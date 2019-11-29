@@ -5,4 +5,30 @@
 
 #intro-text {
   text-align: center;
+  margin-top: 2rem;
+}
+
+#akan-header {
+  text-align: center;
+}
+
+#form-fields {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fo-rm {
+  margin-top: 4rem;
+}
+
+#rights {
+  margin-left: 4rem;
+}
+
+#email {
+  margin-right: 4rem;
 }
