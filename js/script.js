@@ -25,4 +25,10 @@ function userInfo() {
     alert("Please enter a valid day ");
     return false;
   }
+
+  var day =
+    parseInt(cc / 4 - 2 * cc - 1 + (5 * yy) / 4 + (26 * (mm + 1)) / 10 + dd) %
+    7;
+
+  var gender = document.querySelector('input[name="gender"]:checked').value;
 }
